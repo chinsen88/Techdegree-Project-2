@@ -264,6 +264,10 @@
     padding-bottom: 10px;
   }
 
+  .name a, .main-nav a {
+    padding: 10px 0;
+  }
+
   .main-intro {
       max-width: 1152px;
   }
