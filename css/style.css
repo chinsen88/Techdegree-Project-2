@@ -1,0 +1,289 @@
+/* ============================
+ ----  Base Element Styles ----
+ ============================*/
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family:"Open Sans", Helvetica, Arial, sans-serif;
+    line-height:1.5;
+    color:#333;
+    background-color:#fafafa;
+  }
+
+  h1,
+  h2,
+  h3
+  {
+    text-align:center;
+    margin:0;
+  }
+
+  h1 {
+    font-size:1.75em;
+    font-weight:800;
+  }
+
+  h2 {
+    font-size:1.1em;
+    font-weight:600;
+    padding:0.75em 0;
+  }
+
+  h3 {
+    font-size:1em;
+    font-weight:800;
+    text-transform:uppercase;
+    padding: 2.5em 0 1.5em;
+    margin: 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  a {
+    text-decoration:none;
+    color:#4a4a4a;
+    letter-spacing: -0.75px;
+  }
+
+  p {
+    font-size:1em;
+    margin:0 0 1em;
+    text-align:center;
+    color:#7f7f7f;
+    letter-spacing: -0.75px;
+  }
+
+  a:hover,
+  .main-nav a:hover {
+    color:red;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .contact-detail {
+    font-weight:600;
+    margin-left:1em;
+  }
+
+  .footer-name {
+      float: left;
+  }
+
+  .footer-link {
+    float: right;
+    text-transform: uppercase;
+}
+
+  .highlight {
+    font-weight:600;
+  }
+
+  .hRed {
+    color:#e25156;
+  }
+
+  .hGreen{
+    color:#63b879;
+  }
+
+  .skills {
+    text-align: center;
+    list-style: inside lower-greek;
+  }
+
+  /* ============================
+   ----  Base Layout Styles ----
+   ============================*/
+   .main-nav {
+     margin-top:10px;
+   }
+
+   .name a,
+   .main-nav a{
+    text-align: center;
+    display: block;
+    padding:10px;
+   }
+
+   .main-nav a {
+     text-transform: uppercase;
+     font-size: 1em;
+     font-weight:800;
+     color:#333;
+     background:#fff;
+     margin-bottom:0.25em;
+    }
+
+   /* ====================
+    ---- Containers ---
+   ==================== */
+
+   .main-header {
+     padding-top:10px;
+   }
+
+   .introImg {
+    padding: 0.5em 3em;
+  }
+
+  .container {
+    padding: 0 1em 2em;
+  }
+/*  #portfolio,
+  #contact {
+    padding-top:3em;
+    padding-bottom:3em;
+    }
+    */
+
+  .whiteBack{
+    background: #fff;
+  }
+
+  .col {
+    padding-top:1em;
+  }
+  .col p {
+    font-size:0.95em;
+  }
+  .main-footer {
+      padding: 2em 0 3em;
+      border-top: 1px solid #e7e7e7;
+      font-weight: 700;
+      font-size: 0.8em;
+      margin: 0 5%;
+  }
+
+  .footer-nav {
+      display: none;
+  }
+
+/* --- MEDIA RESPONSES --- */
+
+
+@media (min-width:768px) {
+
+  body {
+    padding-top:1.5em;
+  }
+
+  p {
+      font-size: 1.3125em;
+      max-width: 75%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .main-nav {
+  display:table;
+  margin:0 auto;
+  }
+
+  .main-nav li {
+  display: inline-block;
+  margin-left: 15px;
+  }
+
+  .main-nav a {
+    background: transparent;
+  }
+
+  .col {
+    width: 50%;
+    float: left;
+    padding: 1.25em .25em;
+  }
+
+  .introText {
+    float: left;
+    width: 60%;
+    padding-right: 3%;
+  }
+
+  .introText p {
+    max-width:100%;
+  }
+  .introImg {
+    float: right;
+    width: 40%;
+    padding:0;
+  }
+
+  .introText p {
+    text-align:left;
+  }
+
+  .main-footer {
+    padding-bottom:6em;
+  }
+  .footer-link {
+      display: none;
+  }
+
+  .footer-nav {
+    float:right;
+    display:block;
+  }
+
+  .footer-nav li {
+    display: inline-block;
+    margin: 0 0 0 10px;
+    text-transform: uppercase;
+  }
+
+  /* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+}
+
+
+@media (min-width:1024px) {
+
+  .name {
+    float: left;
+  }
+
+  .main-nav {
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .main-intro {
+      max-width: 1152px;
+  }
+
+  .container {
+    width: 95%;
+    padding: 0 2em 2em;
+  }
+
+  .col {
+    width: 33.33333%;
+    padding: 1.25em 0.5em;
+  }
+
+  .col p {
+    font-size: 0.8155em;
+  }
+
+  h3 {
+    padding: 3em 0 2em;
+  }
+
+}
