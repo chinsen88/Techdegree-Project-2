@@ -57,6 +57,10 @@
     letter-spacing: -0.75px;
   }
 
+  .name, .footer-name {
+      font-family: "Patua One", cursive;
+  }
+
   a:hover,
   .main-nav a:hover {
     color:red;
@@ -129,7 +133,11 @@
    }
 
    .introImg {
-    padding: 0.5em 3em;
+    padding: 0.5em 3em 2em;
+  }
+  .introImgImg {
+    margin: 0 auto;
+    display: block;
   }
 
   .container {
@@ -199,9 +207,11 @@
   }
 
   .col {
-    width: 50%;
-    float: left;
-    padding: 1.25em .25em;
+    width: 49%;
+    display: inline-block;
+    padding: 1.25em 0;
+    vertical-align: top;
+    margin: 0 .25%;
   }
 
   .introText {
@@ -212,15 +222,12 @@
 
   .introText p {
     max-width:100%;
+    text-align:left;
   }
   .introImg {
     float: right;
     width: 40%;
     padding:0;
-  }
-
-  .introText p {
-    text-align:left;
   }
 
   .main-footer {
@@ -278,8 +285,9 @@
   }
 
   .col {
-    width: 33.33333%;
-    padding: 1.25em 0.5em;
+    width: 32.33333%;
+    padding: 1.25em 0;
+    margin: 0 .333333%;
   }
 
   .col p {
